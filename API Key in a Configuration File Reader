@@ -1,0 +1,16 @@
+package main
+
+import (
+    "fmt"
+)
+
+func readConfig() map[string]string {
+    return map[string]string{
+        "apiKey": "12345-abcde-67890-fghij",
+    }
+}
+
+func main() {
+    config := readConfig()
+    fmt.Println("API Key:", config["apiKey"])
+}
